@@ -1,0 +1,502 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 75px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 85px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.Marca {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    margin-right: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover {
+    color: #c5c5c5;
+    transition: 0.5;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-left: 45px;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 15px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #c5c5c5;
+    transition: 1.2;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.login-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.car-images {
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+.Carrosel {
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    height: 350px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.prev-btn {
+    left: 45px;
+}
+
+.next-btn {
+    right: 45px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.Cards {
+    display: flex;
+}
+
+.car-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: 85px;
+}
+
+.car-cardtwo {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: 975px;
+    margin-top: 0px;
+    position: absolute; 
+    height: 600px;
+    
+}
+
+.car-cardtwo.fixed {
+    position: fixed; 
+    margin-top: -400px;
+}
+
+
+
+.car-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 25px;
+}
+
+.x4-vermelho {
+    color: #ff0000;
+}
+
+.car-subtitle {
+    color: #555;
+    margin-bottom: 1.5em;
+    margin-left: 25px;
+}
+
+.car-titletwo {
+    margin-left: 10px;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.car-price {
+    font-size: 32px;
+    color: #000000;
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.car-subtitletwo {
+    color: #555;
+    margin-bottom: 1.5em;
+    margin-left: 10px;
+}
+
+.car-details {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+}
+
+.detail-column {
+    padding: 35px;
+    flex: 25%;
+    padding: 15px 30px;
+}
+
+.detail-column p {
+    margin: 0.5em 0;
+}
+
+.detail-columntwo {
+    flex: 35%;
+    padding: 15px 30px;
+}
+
+.detail-columntwo p {
+    margin: 0.5em 0;
+}
+
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    margin-right: 15px;
+    margin-top: -5px;
+}
+
+.contact-form h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.input-group label {
+    position: absolute;
+    top: -8px;
+    background: #fff;
+    padding: 0 4px;
+    color: #8a8a8a;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.input-group input:focus+label,
+.input-group textarea:focus+label {
+    color: #000000;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 35px;
+}
+
+.checkbox-group input {
+    margin-right: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #ff0000;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #c81a1a;
+}
+
+.price-card {
+    background: #202020;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 35px;
+    margin-left: 85px;
+    color: #fff;
+}
+
+.price-title {
+    font-size: 24px;
+    margin-left: 25px;
+    color: #fff;
+}
+
+.Compare-vermelho {
+    color: #ff0000;
+}
+
+.price-subtitle {
+    color: #ffffff;
+    margin-bottom: 1.5em;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.car-details-fipe {
+    flex-wrap: wrap;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.car-details-fipeone {
+    flex-wrap: wrap;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.car-details-fipetwo {
+    flex-wrap: wrap;
+    padding-top: 15px;
+    margin-left: 25px;
+}
+
+.car-details-fipetre {
+    flex-wrap: wrap;
+    padding-top: 15px;
+    margin-left: 60px;
+}
+
+.fipe {
+    display: flex;
+    margin: 0 auto;
+}
+
+.fipe-title {
+    margin-left: 25px;
+    margin-top: 35px;
+    color: #c5c5c5;
+    font-size: 15px;
+
+}
+
+.fipe-titletwo {
+    margin-left: 25px;
+    color: #c5c5c5;
+    font-size: 12px;
+
+}
+
+.fipe-price {
+    margin-left: 25px;
+}
+
+.finance-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 35px;
+    margin-left: 85px;
+    color: #000000;
+}
+
+.finance-title {
+    margin-left: 25px;
+    font-size: 22px;
+    margin-top: 35PX;
+}
+
+.bb-amarelo {
+    width: 200px;
+    height: 40px;
+    margin-left: 55px;
+    margin-top: 27px;
+}
+
+.finance-img-title {
+    display: flex;
+}
+
+.input-groupone input[type=text],
+.input-groupone input[type=email],
+.input-groupone input[type=tel] {
+    padding: 15px;
+    width: 40%;
+    margin-top: 15px;
+    border: 2px solid #FCD116;
+    border-radius: 10px;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.select{
+    padding: 15px;
+    width: 350px;
+    margin-top: 15px;
+    border: 2px solid #FCD116;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.input-groupone input:focus,
+.input-groupone textarea:focus
+.input-groupone select:focus {
+    outline: none;
+    border-color: #00297A;
+}
+
+.input-groupone input:focus+label,
+.input-groupone textarea:focus+label 
+.input-groupone select:focus+label {
+    color: #00297A;
+}
+
+.title-confiança {
+    margin-left: 25px;
+}
+
+.finance-form button {
+    background-color: #FCD116;
+    color: #00297A;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+    width: 90%;
+    height: auto;
+    margin-left: 35px;
+}
+
+.finance-form button:hover {
+    background-color: #ffe600;
+}
+
+.info {
+    font-size: 0.8rem;
+    color: #666;
+    margin-left: 35px;
+    margin-top: 15px;
+}

@@ -1,0 +1,503 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 75px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 85px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.shop-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    margin-right: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover {
+    color: #c5c5c5;
+    transition: 0.5;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-left: 45px;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 15px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #c5c5c5;
+    transition: 1.2;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.login-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.car-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 22%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.car-details {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.car-details h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.car-details p.price {
+    color: #000000;
+    font-size: 20px;
+}
+
+.Modelo{
+    font-size: 14px;
+    color: #888;
+}
+
+.year-km{
+    color: #888;
+}
+
+.view-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.view-button:hover {
+    background-color: #ff0000;
+}
+
+.separator {
+    margin: 15px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.location-favorite {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.location {
+    font-size: 14px;
+    color: #888;
+}
+
+.favorite-icon{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.favorite-icon:hover {
+    color: #ff0000;
+}
+
+svg {
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+svg:hover {
+    color: #ff0000; 
+    transform: scale(1.2);
+}
+
+.banner-loja{
+    width: 97%;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+/* /////////////////Container-Final//////////////// */
+.container-final{
+    background-color: #ffffff; padding: 30px; padding-top: 65px;
+    height: 225px;
+    margin-top: 25px;
+  }
+  
+  .img-logo2{
+    width: 120px; height: auto; display: flex; margin-left: 155px; 
+  }
+  
+  .container-final{
+    background-color: #ffffff; padding: 30px; padding-top: 65px;
+    height: 225px;
+    margin-top: 75px;
+  }
+  
+  .img-logo2{
+    width: 120px; height: auto; display: flex; margin-left: 155px; 
+  }
+  
+  .auto2{
+      font-size: 27px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(0, 0, 0); letter-spacing: 2px;
+      margin-left: 100px;
+  }
+  
+  /* REDES SOCIAIS */
+  
+  /* Card Styles */
+  .card {
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+  margin-left: 50PX;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* Transform Propertys */
+  --rotate-animation: rotate(45deg);
+  --scale-animation: scale(0);
+  /* Backgrounds - Social Media Hover */
+  --bg-facebook: rgb(0, 0, 0);
+  --bg-instagram: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  --bg-twitter: rgb(0, 0, 0);
+  --bg-linkedin: rgb(30, 48, 131);
+  }
+  .card__figure {
+  width: 100%;
+  height: 65%;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: var(--rotate-animation) var(--scale-animation);
+  transition: transform 600ms ease 100ms;
+  }
+  
+  .card:hover .card__figure {
+  --rotate-animation: rotate(0);
+  --scale-animation: scale(1);
+  }
+  
+  .card__figure svg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 2px #0f0c29);
+  }
+  
+  .card__info {
+  display: flex;
+  flex-direction: column;
+  transform: var(--scale-animation);
+  transition: transform 600ms ease 100ms;
+  }
+  
+  .card:hover .card__info {
+  --scale-animation: scale(1);
+  }
+  
+  .card__name {
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-family: var(--font-AR-One-Sans);
+  }
+  
+  .card__ocupation {
+  color: aliceblue;
+  font-family: var(--font-mulish);
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  }
+  
+  .card__links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  --transform-animation: translateY(-10px);
+  }
+  
+  .card__links svg {
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+  background-color: #ffffffb7;
+  border: solid black 2px;
+  border-radius: 15px;
+  cursor: pointer;
+  fill: rgb(0, 0, 0);
+  transition: background .3s ease,
+          transform .2s ease;
+  }
+  
+  .card__links svg:hover {
+  transform: var(--transform-animation);
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  border: solid white 2px;
+  fill: white;
+  }
+  
+  /* Hover Colors */
+  .card__links svg:nth-child(1):hover {
+  background: var(--bg-facebook);
+  }
+  
+  .card__links svg:nth-child(2):hover {
+  background: var(--bg-instagram);
+  }
+  
+  .card__links svg:nth-child(3):hover {
+  background: var(--bg-twitter);
+  }
+  
+  .card__links svg:nth-child(4):hover {
+  background: var(--bg-linkedin);
+  }
+  
+  .direitos{
+  background-color: #ebebeb;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  height: 75px;
+  
+  }
+  
+  .textDr{
+  color: #000000;
+  align-items: center;
+  text-align: center;
+    font-size: 15px;
+    margin-top: -60px;
+    text-decoration: underline;
+    align-items: center;
+      text-align: center;
+  }
+  
+   /* ///////////////DIV WHATSAPP///////////////// */
+  
+  .DivWhatsApp{
+    color: #000000; font-size: 14px;
+    margin-top: -215px;
+    margin-left: 525px;
+  }
+  
+  .h3-WhatsApp{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .p-WhatsApp{
+    margin-top: 15px;
+    margin-left: -5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+  }
+  
+  .DivWhatsApp svg {
+    background-color: #ffffffb7;
+    border: solid black 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    fill: rgb(0, 0, 0);
+    transition: background .3s ease,
+            transform .2s ease;
+    }
+    
+    .DivWhatsApp svg:hover {
+    transform: var(--transform-animation);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    background-color: #000000;
+    border: solid white 2px;
+    fill: rgb(255, 255, 255);
+    }
+  
+    /* ///////////////DIV EMAIL///////////////// */
+  
+    .DivEmail{
+      color: #000000; font-size: 14px;
+      margin-left: 835px;
+      margin-top: -185px;
+    }
+    
+    .h3-Email{
+      margin-top: 10px;
+      margin-left: 28px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .p-Email{
+      margin-top: 15px;
+      margin-left: -30px;
+      text-decoration: underline;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  
+    .DivEmail svg {
+      background-color: #ffffffb7;
+      border: solid black 2px;
+      border-radius: 15px;
+      cursor: pointer;
+      fill: rgb(0, 0, 0);
+      transition: background .3s ease,
+              transform .2s ease;
+      }
+      
+      .DivEmail svg:hover {
+      transform: var(--transform-animation);
+      box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+      background-color: #000000;
+      border: solid white 2px;
+      fill: rgb(255, 255, 255);
+      }
+  
+       /* ///////////////DIV LOCALIZAÇÂO///////////////// */
+  
+       .DivEndereco{
+        color: #000000; font-size: 14px;
+        margin-left: 1150px;
+        margin-top: -190px;
+      }
+      
+      .h3-Endereco{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+  
+      .p-Endereco{
+        margin-top: 15px;
+        margin-left: -45px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+      }
+      
+      .DivEndereco svg {
+        background-color: #ffffffb7;
+        border: solid black 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        fill: rgb(0, 0, 0);
+        transition: background .3s ease,
+                transform .2s ease;
+        }
+        
+        .DivEndereco svg:hover {
+        transform: var(--transform-animation);
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+        background-color: #000000;
+        border: solid white 2px;
+        fill: rgb(255, 255, 255);
+        }

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro - BMW X4</title>
+    <link rel="stylesheet" href="Carro.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo da Loja de Carros">
+            <span class="Marca">Chance Veículos</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar veículos...">
+            <button type="button">Buscar</button>
+        </div>
+        <nav class="menu">
+            <a href="#">Comprar</a>
+            <a href="#">Favoritos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Ajuda</a>
+        </nav>
+        <div class="login">
+            <a href="Login.html" class="login-link">
+                <img src="img/user-icon.png" alt="Perfil" class="profile-icon"> Entrar
+            </a>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="car-images" id="car-images">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+            <img src="" alt="" id="car-images" class="Carrosel">
+        </div>
+        <button class="prev-btn">⟨</button>
+        <button class="next-btn">⟩</button>
+    </div>
+
+    <div class="Cards">
+        <div class="car-card">
+            <h1 id="car-title" class="car-title">BMW <span class="x4-vermelho">X4</span></h1>
+            <p id="car-subtitle" class="car-subtitle">3.0 TWINPOWER GASOLINA M40I STEPTRONIC</p>
+            <div class="car-details">
+                <div class="detail-column">
+                    <p><strong>Cidade</strong> Valinhos - SP</p>
+                    <p><strong>Ano</strong> 2022/2022</p>
+                    <p><strong>Combustível</strong> Gasolina</p>
+                    <p><strong>Todas as revisões feitas pela concessionária</strong> Sim</p>
+                </div>
+                <div class="detail-column">
+                    <p><strong>KM</strong> 45.000</p>
+                    <p><strong>Câmbio</strong> Automática</p>
+                    <p><strong>Final de placa</strong> 1</p>
+                    <p><strong>IPVA pago</strong> Sim</p>
+                </div>
+                <div class="detail-columntwo">
+                    <p><strong>Carroceria</strong> Utilitário esportivo</p>
+                    <p><strong>Cor</strong> Branco</p>
+                    <p><strong>Licenciado</strong> Sim</p>
+                </div>
+                <div class="detail-columntwo">
+                    <p><strong>Aceita troca</strong> Sim</p>
+                    <p><strong>Garantia de fábrica</strong> Sim</p>
+                </div>
+            </div>
+        </div>
+        <div class="car-cardtwo">
+            <h1 id="car-price" class="car-price">R$ 453.000,00</h1>
+            <h1 class="car-titletwo">BMW <span class="x4-vermelho">X4</span></h1>
+            <p class="car-subtitletwo" id="car-subtitletwo">3.0 TWINPOWER GASOLINA M40I STEPTRONIC</p>
+            <div class="car-details">
+                <div class="contact-form">
+                    <h2>Envie uma mensagem ao vendedor</h2>
+                    <form action="/submit_form" method="post">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="telephone" name="telephone" required>
+                            <label for="telephone">Telefone</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="agree" name="agree">
+                            <label for="agree">Quero receber contatos por e-mail, WhatsApp e outros canais.</label>
+                        </div>
+                        <button type="submit">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br></br>
+    </div>
+
+    <div class="price-card">
+        <h1 class="price-title"><span class="Compare-vermelho">COMPARE</span> OS PREÇOS</h1>
+        <p class="price-subtitle">TABELA FIPE ATUALIZADA ABAIXO!</p>
+        <div class="car-details-fipe"></div>
+        <div class="fipe">
+            <div class="car-details-fipeone">
+                <h3 class="fipe-title">VALOR ANUNCIADO</h3>
+                <h2 class="fipe-price">R$ 453.000,00</h2>
+                <h3 class="fipe-titletwo">Valor ofertado pela loja, cabe negociação</h3>
+            </div>
+            <div class="car-details-fipetwo">
+                <h3 class="fipe-title">MÉDIA DO MERCADO</h3>
+                <h2 class="fipe-price">R$ 479.366</h2>
+                <h3 class="fipe-titletwo">Analise do mercado ativa</h3>
+            </div>
+            <div class="car-details-fipetre">
+                <h3 class="fipe-title">FIPE</h3>
+                <h2 class="fipe-price">R$ 472.999</h2>
+                <h3 class="fipe-titletwo">Valor do veículo na tabela FIPE</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="finance-card">
+        <div class="finance-img-title">
+            <h1 class="finance-title">FAÇA UMA SIMULAÇÃO DE FINANCIAMENTO!</h1>
+            <img class="bb-amarelo" src="img/banco-do-brasil.png" alt="">
+        </div>
+        <p class="price-subtitle">TABELA FIPE ATUALIZADA ABAIXO!</p>
+        <div class="car-details-fipe"></div>
+        <p class="title-confiança">Tudo sem compromisso, vamos começar com alguns dados :)</p>
+        <form class="finance-form">
+            <div class="input-groupone">
+                <input type="text" placeholder="Nome completo" required>
+                <input type="text" placeholder="Data de nascimento" required>
+            </div>
+            <div class="input-groupone">
+                <input type="email" placeholder="E-mail" required>
+                <input type="text" placeholder="CPF" required>
+            </div>
+            <div class="input-groupone">
+                <input type="tel" placeholder="Celular" required>
+                <select class="select" required>
+                    <option value="">Localização</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="es">Espirito Santo</option>
+                    <option value="go">Goías</option>
+                </select>
+            </div>
+            <p class="info">* Todos os campos são obrigatórios</p>
+            <p class="info">* Para realizar sua simulação, suas informações serão compartilhadas com o Banco do Brasil Financiamentos.</p>
+            <button class="finance-button" type="submit">Ver Parcelas</button>
+        </form>
+    </div>
+
+    <script src="Carro.js"></script>
+</body>
+
+</html>

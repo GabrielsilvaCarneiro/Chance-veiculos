@@ -19,25 +19,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const carImageWidth = document.querySelector('.Carrosel').clientWidth;
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
-    let index = 0; // Começa no índice 0
+    let index = 1;
     const totalImages = carImages.children.length;
 
     function updateCarousel() {
         carImages.style.transform = `translateX(-${index * carImageWidth}px)`;
     }
-
+    
     nextBtn.addEventListener('click', () => {
         index++;
         if (index >= totalImages) {
-            index = 1;
+            index = 1; // Volta para a primeira imagem se o índice for maior ou igual ao total de imagens
         }
         updateCarousel();
     });
-
+    
     prevBtn.addEventListener('click', () => {
         index--;
         if (index < 0) {
-            index = totalImages - 1;
+            index = totalImages + 2 ; // Volta para a última imagem se o índice for menor que zero
         }
         updateCarousel();
     });
@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializa o carrossel para a primeira imagem
     updateCarousel();
 });
+
+
 
 function atualizarCarro(dados) {
     // Atualizar título do carro
